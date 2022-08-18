@@ -14,8 +14,12 @@ public class UserName {
         System.out.println("Enter last name: ");
         String lastName = scanner.next();
 
-        scanner.close();
+        //scanner.close();
 
         System.out.println(obj.isValidLastName(lastName) ? "Valid" : "In Valid");
+
+        System.out.println("Enter Email: ");
+        String email = scanner.next();
+        System.out.println(obj.isValidFirstName(email) ? "Valid" : "In Valid");
     }
 }

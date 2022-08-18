@@ -25,4 +25,15 @@ public class InputValidate
 
         return matcher.matches();
     }
+    public static boolean isValidEmail(String email) {
+
+        String emailRegex = "^[a-z]{3}[a-zA-Z.]{0,}+@+bl.co+[a-z.]{0,}$";
+
+        Pattern pattern = Pattern.compile(emailRegex);
+
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
 }
+
