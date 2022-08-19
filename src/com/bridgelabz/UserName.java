@@ -25,5 +25,9 @@ public class UserName {
         System.out.println("Enter Mobilenumber: ");
         String mobileNumber = scanner.next();
         System.out.println(obj.isValidMobileNumber(mobileNumber) ? "Valid" : "In Valid");
+
+        System.out.println("Enter password: ");
+        String password = scanner.next();
+        System.out.println(obj.validPassword(password) ? "Valid" : "In Valid");
     }
 }

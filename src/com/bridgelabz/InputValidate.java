@@ -1,8 +1,7 @@
 package com.bridgelabz;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-public class InputValidate
-{
+public class InputValidate {
     // Creating isValidFirstName method to validate the first name given by user using regex
     //return - true or false
     public static boolean isValidFirstName(String firstName) {
@@ -25,6 +24,7 @@ public class InputValidate
 
         return matcher.matches();
     }
+
     public static boolean isValidEmail(String email) {
 
         String emailRegex = "^[a-z]{3}[a-zA-Z.]{0,}+@+bl.co+[a-z.]{0,}$";
@@ -34,14 +34,22 @@ public class InputValidate
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+
     //Creating isValidMobileNumber method to validate the mobile format given by user using regex
-    public static boolean isValidMobileNumber(String mobileNumber)
-    {
+    public static boolean isValidMobileNumber(String mobileNumber) {
         String mobileNumberRegex = "^[0-9]{2}[\\s][0-9]{10}$";
         Pattern pattern = Pattern.compile(mobileNumberRegex);
         Matcher matcher = pattern.matcher(mobileNumber);
         return matcher.matches();
     }
 
+    public static boolean validPassword(String password)
+    {
+        System.out.print("Enter the Password: ");
+        String passwordregex = "^[A-Za-z0-9@._-]{8,}$";
+        Pattern pattern = Pattern.compile(passwordregex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
 }
 
