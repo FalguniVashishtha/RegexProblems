@@ -30,5 +30,7 @@ public class UserName {
         String password = scanner.next();
         System.out.println(obj.validPassword(password) ? "Valid" : "In Valid");
     }
+
 }
+
 

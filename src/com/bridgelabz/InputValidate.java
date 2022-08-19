@@ -46,7 +46,7 @@ public class InputValidate {
     public static boolean validPassword(String password)
     {
         System.out.print("Enter the Password: ");
-        String passwordregex = "^[A-Z]{1}[A-Za-z0-9@._-]{7,}$";
+        String passwordregex = "^[A-Z]{1}[0-9]{1}(?=.*[@$!%*#?&])[A-Za-z0-9@._-]{6,}$";
         Pattern pattern = Pattern.compile(passwordregex);
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
