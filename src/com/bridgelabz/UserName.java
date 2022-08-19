@@ -20,6 +20,10 @@ public class UserName {
 
         System.out.println("Enter Email: ");
         String email = scanner.next();
-        System.out.println(obj.isValidFirstName(email) ? "Valid" : "In Valid");
+        System.out.println(obj.isValidEmail(email) ? "Valid" : "In Valid");
+
+        System.out.println("Enter Mobilenumber: ");
+        String mobileNumber = scanner.next();
+        System.out.println(obj.isValidMobileNumber(mobileNumber) ? "Valid" : "In Valid");
     }
 }
